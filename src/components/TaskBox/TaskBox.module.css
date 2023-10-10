@@ -1,0 +1,8 @@
+main{
+    display: flex;
+    min-height: 400px;
+    background-color: rgb(247, 247, 247);
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 2%;
+}
