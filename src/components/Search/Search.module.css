@@ -1,0 +1,37 @@
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox > input{
+    border-radius: 10px;
+    height: 30px;
+    width: 60%;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+@media (max-width:720px) {
+    .searchBox{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .searchBox > input{
+        width: 100%;
+    }
+    .buttonBox{
+        width: 100%;
+    }
+}
