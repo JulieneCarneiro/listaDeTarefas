@@ -1,0 +1,56 @@
+.modal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    z-index: 5;
+    background-color: rgb(255,255,255);
+    border: solid 5px rgb(27,27,27);
+    border-radius: 10px;
+}
+
+.modal > input{
+    width: 80%;
+    height: 20px;
+}
+
+.modalButton{
+    width: 80%;
+    gap: 5px;
+    margin: 5px;
+}
+
+.backgroundModal{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27,27,27,0.5);
+    z-index: 1;
+}
+
+@media (max-width:720px) {
+    .modal{
+        right: 10%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .modalButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .modal > input{
+        height: 30px;
+    }
+
+}
