@@ -7,6 +7,7 @@ function App() {
   const [listTasks, setListTasks] = useState([])
   const [deleteKey, setDeleteKey] = useState()
 
+
   useEffect(()=>{
     const newList = listTasks.filter((task)=>task.id != deleteKey)
     setListTasks(newList)

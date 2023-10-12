@@ -7,7 +7,7 @@ function TaskBox({listTasks, setDeleteKey}){
 
     return (
         <main>
-            {listTasks.map((task)=> <TaskCard taskTitle={task.title} key={task.id} setDeleteKey={setDeleteKey} keyValue={task.id} /> )}
+            {listTasks.map((task)=> <TaskCard taskTitle={task.title} key={task.id} setDeleteKey={setDeleteKey} keyValue={task.id} select={task.select} /> )}
         </main>
     )
     
